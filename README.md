@@ -1,1 +1,2 @@
 # Circle_List_Creation_Tool
+行きたいサークルをまとめたリストを作ってくれるツール
