@@ -13,9 +13,13 @@ pipを用いてライブラリをインストールします
 
 kivyのインストール
 kivyとはpythonで書かれたプログラムをGUIで動かせるようにするライブラリです。
+
 pip install --upgrade pip wheel setuptools
+
 pip install --upgrade pip wheel setuptools
+
 pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
+
 pip install kivy
 
 poenpyxlのインストール
