@@ -4,7 +4,7 @@
 ![github](https://user-images.githubusercontent.com/42823074/45738410-4f9b6600-bc2b-11e8-9c2f-d9ce6063a502.png)
 ## Description
 
-## Demo
+## 使い方デモ
 
 ## Requirement
 
