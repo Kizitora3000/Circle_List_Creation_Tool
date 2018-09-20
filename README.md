@@ -6,11 +6,10 @@
 ## 使い方
 main.py, Excel_Init.py, Input_to_Excel.py, quit_Excel.py, CircleListCreationToolApp.kvの五つのファイルを同じフォルダーの中に入れて、main.pyを実行してください。すると下のようなアプリが立ち上がるので、そこで操作していきます。
 ![github 2](https://user-images.githubusercontent.com/42823074/45791002-9e480f00-bcc2-11e8-8644-f1d7c4c7ce9e.png)
-## インストール方法
-pipを用いてライブラリをインストールします
 
-kivyのインストール  
-kivyとはpythonで書かれたプログラムをGUIで動かせるようにするライブラリです。
+## ライブラリのインストール
+pipを用いて必要なライブラリ、Kivyとopenpyxlをインストールします。
+以下のコマンドをコマンドプロンプトなどに入力してください。
 
 pip install --upgrade pip wheel setuptools
 
@@ -20,5 +19,7 @@ pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
 
 pip install kivy
 
-poenpyxlのインストール  
-pythonでエクセルが動かせるようにするライブラリです。
+pip install openpyxl
+
+## 補足
+画像だとエクセルに罫線がついていますが、実際にプログラムを実行して作ったエクセルファイルは、罫線がありません。これはopenpyxlの都合上、複数のセルに罫線を引こうとしても、罫線が途中で切れてしまうためです。そのため出来上がったファイルに自分で罫線を付け足すといった対策をとる必要があります。openpyxl v2.6でこのバグが修正されるようなので、v2.6がリリースしたら罫線もpythonで引けるようにしたいです。（やる気は）ないです。
