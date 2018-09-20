@@ -67,7 +67,7 @@ class TitleScreen(Screen):
         sm.current = "load"
 
 
-class CircleListCreationToolApp(App):
+class CircleListCreationToolApp1(App):
     def build(self):
         sm.add_widget(TitleScreen(name="title"))
         sm.add_widget(CreateScreen(name="create"))
@@ -77,4 +77,4 @@ class CircleListCreationToolApp(App):
 
 
 if __name__ == "__main__":
-    CircleListCreationToolApp().run()
+    CircleListCreationToolApp1().run()
