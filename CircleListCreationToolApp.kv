@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<TextInput>:
+    multiline: False
+    write_tab: False
+    font_size: 20
+
+<Label>:
+    font_size: 20
+    color: 0.1, 0.1, 0.1, 1
+
+<PaddingBoxLayout@BoxLayout>:
+    padding: 20
+
+<TitleScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: 0.9, 0.9 ,0.9 ,1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            size_hint_y: 4
+            text: "サークルリスト作成ツール"
+            font_size: 32
+
+        PaddingBoxLayout:
+            orientation: "vertical"
+            size_hint_y: 6
+
+            PaddingBoxLayout:
+                Button:
+                    text: "新規"
+                    font_size: 24
+                    color: 1, 1, 1, 1
+                    on_press: root.create_button_clicked()
+
+                Button:
+                    text: "ロード"
+                    font_size: 24
+                    color: 1, 1, 1, 1
+                    on_press: root.load_button_clicked()
+
+
+<CreateScreen>
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: 0.9, 0.9 ,0.9 ,1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            size_hint_y: 4
+            text: "エクセルの作成"
+            font_size: 32
+
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_y: 6
+
+            PaddingBoxLayout
+                Label:
+                    text: "タイトルを入力してください。"
+                    font_size: 24
+                TextInput:
+                    id: text_title
+
+            Label:
+                text: ""
+
+            PaddingBoxLayout:
+                Label:
+                    text: ""
+
+                Button:
+                    text: "作成する"
+                    font_size: 24
+                    color: 1, 1, 1, 1
+                    on_press: root.create_button_clicked()
+
+
+<InputScreen>
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: 0.9, 0.9 ,0.9 ,1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "入力画面"
+            size_hint_y: 1
+            font_size: 32
+
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_y: 9
+
+            PaddingBoxLayout:
+                Label:
+                    text: "サークル名"
+                TextInput:
+                    id: text_name
+
+            PaddingBoxLayout:
+                Label:
+                    text: "買う内容"
+                TextInput:
+                    id: text_detail
+
+            PaddingBoxLayout:
+                Label:
+                    text: "twitterアドレス"
+                TextInput:
+                    id: text_twID
+
+            PaddingBoxLayout:
+                Label:
+                    text: "優先順位"
+                TextInput:
+                    id: text_priority
+
+            PaddingBoxLayout:
+                Label:
+                    text: "予想金額"
+                TextInput:
+                    id: text_amount
+
+            PaddingBoxLayout:
+                Label:
+                    text: "補足"
+                TextInput:
+                    id: text_supplement
+
+            PaddingBoxLayout:
+                Button:
+                    text: "入力する"
+                    color: 1, 1, 1, 1
+                    on_press: root.input_button_clicked()
+                Button:
+                    text: "クリア"
+                    color: 1, 1, 1, 1
+                    on_press: root.clear_button_clicked()
+
+                Button:
+                    text: "終了する"
+                    color: 1, 1, 1, 1
+                    on_press: root.quit_button_clicked()
+
+<LoadScreen>
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: 0.9, 0.9 ,0.9 ,1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            size_hint_y: 4
+            text: "エクセルのロード"
+            font_size: 32
+
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_y: 6
+
+            PaddingBoxLayout
+                Label:
+                    text: "ファイルの名前を入力してください。"
+                    font_size: 24
+                TextInput:
+                    id: text_title
+
+            Label:
+                text: ""
+
+            PaddingBoxLayout:
+                Label:
+                    text: ""
+
+                Button:
+                    text: "ロードする"
+                    font_size: 24
+                    color: 1, 1, 1, 1
+                    on_press: root.load_button_clicked()
+
