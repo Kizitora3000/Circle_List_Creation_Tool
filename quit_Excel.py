@@ -37,4 +37,4 @@ def quit_excel(title):
 
     wb.save(title + ".xlsx")
 
-    sys.exit(
+    sys.exit()
