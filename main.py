@@ -41,7 +41,7 @@ class InputScreen(Screen):
             self.ids[key].text = ""
 
     def quit_button_clicked(self):
-        quit_Excel.quit_excel()
+        quit_Excel.quit_excel(title)
 
 
 class LoadScreen(Screen):
