@@ -29,8 +29,13 @@ class InputScreen(Screen):
     inputted_string_list = []
 
     def input_button_clicked(self):
-        for key in self.ids:
-            self.inputted_string_list += self.ids[key].text
+        self.inputted_string_list += self.ids["text_name"].text
+        self.inputted_string_list += self.ids["text_detail"].text
+        self.inputted_string_list += self.ids["text_twID"].text
+        self.inputted_string_list += self.ids["text_priority"].text
+        self.inputted_string_list += self.ids["text_amount"].text
+        self.inputted_string_list += self.ids["text_supplement"].text
+
 
         Input_to_Excel.input_to_excel(self.inputted_string_list, title)
 
