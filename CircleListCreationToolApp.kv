@@ -65,7 +65,8 @@
 
             PaddingBoxLayout
                 Label:
-                    text: "タイトルを入力してください。"
+                    text_size: cm(10), cm(2)
+                    text: "タイトルを入力してください。　拡張子は入力しなくて大丈夫です。"
                     font_size: 24
                 TextInput:
                     id: text_title
@@ -174,7 +175,8 @@
 
             PaddingBoxLayout
                 Label:
-                    text: "ファイルの名前を入力してください。"
+                    text_size: cm(10), cm(2)
+                    text: "ファイルの名前を入力してください。拡張子は入力しなくて大丈夫です。"
                     font_size: 24
                 TextInput:
                     id: text_title
@@ -191,4 +193,3 @@
                     font_size: 24
                     color: 1, 1, 1, 1
                     on_press: root.load_button_clicked()
-
